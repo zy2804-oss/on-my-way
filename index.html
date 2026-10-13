@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="en">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0"><meta name="description" content="On My Way — a cinematic walking music prototype."><title>On My Way</title><link rel="stylesheet" href="style.css"><style>.hidden{display:none!important}</style></head>
+<body>
+  <main>
+    <section id="opening" class="screen opening-screen">
+      <header><span class="brand">ON MY WAY</span></header>
+      <div class="opening-content"><h1>What does your<br>walk feel like?</h1><label class="pov-box" for="povInput"><textarea id="povInput" aria-label="Describe your walking point of view" placeholder="It’s a rainy night in New York.&#10;I’m walking fast to pick up takeout.&#10;I want to feel like a rebellious character&#10;in a movie."></textarea><button id="micButton" type="button" aria-label="Use voice input" title="Use voice input">⌁</button></label><p id="voiceStatus" class="voice-status">Write it as you would say it.</p>
+      <div class="examples"><span>Try a scene</span><button class="example" data-scene="autumn">Autumn in New York</button><button class="example" data-scene="night">New York After Dark</button></div><button id="soundtrackButton" class="primary" type="button">Soundtrack My Walk <span>→</span></button></div>
+    </section>
+    <section id="cinema" class="screen cinema hidden" aria-live="polite">
+      <div class="city"><div class="moon"></div><div class="glow g1"></div><div class="glow g2"></div><div class="rain" aria-hidden="true"></div><div class="leaves" aria-hidden="true"></div><div class="buildings b1"></div><div class="buildings b2"></div><div class="buildings b3"></div><div class="street"></div></div>
+      <div class="film-grain" aria-hidden="true"></div><button id="backButton" class="back" type="button">← Rewrite the scene</button>
+      <div class="title-sequence"><p id="sceneNumber">SCENE 01</p><h2 id="sceneTitle">NEW YORK AFTER DARK</h2><p id="sceneCaption">Rain on the pavement.<br>Footsteps getting faster.<br>Tonight, you’re the main character.</p></div>
+      <div class="original-pov"><span>YOUR POV</span><p id="originalPov"></p></div>
+      <div class="player"><button id="playButton" type="button" aria-label="Play simulated soundtrack">▶</button><div><span>SIMULATED SOUNDTRACK</span><strong id="trackTitle">Midnight Velocity</strong><small id="trackArtist">The Static Hearts</small></div><p id="atmosphere">cinematic noir · high energy</p></div>
+      <button id="behindButton" class="behind" type="button">Behind the Scene <span>+</span></button>
+      <aside id="behindPanel" class="behind-panel hidden"><button id="closePanel" aria-label="Close Behind the Scene">×</button><p class="eyebrow">Computational representation</p><div><span>ORIGINAL POV</span><p id="panelOriginal"></p></div><i>↓</i><div><span>INTERPRETED ATMOSPHERE</span><p id="panelAtmosphere"></p></div><i>↓</i><div><span>SOUNDTRACK STATE</span><p id="panelTrack"></p></div></aside>
+    </section>
+  </main><script src="script.js"></script>
+</body></html>
