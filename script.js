@@ -26,7 +26,7 @@ const scenes = {
 // Each track belongs to a scene; add more tracks here as they become available.
 const musicLibrary = [
   { scene: "autumn", title: "Music Demo", artist: "Audio 873767", src: "audio/873767_musicdemo.wav" },
-  { scene: "night", title: "Industraumatic Loop", artist: "Audio 875304", src: "audio/875304_industraumaticloop.mp3" }
+  { scene: "night", title: "Industraumatic Loop", artist: "Audio 875304", src: "audio/875304_industraumaticloop.mp3" }, { scene: "autumn", title: "Lakeside", artist: "valhallaambient", src: "audio/873288__valhallaambient__lakeside.wav" }, { scene: "night", title: "Cinematic Drum Loop: Ares", artist: "harrisonlace", src: "audio/873168__harrisonlace__cinematic_drum_loop_ares_127.wav" }
 ];
 
 const audio = new Audio();
